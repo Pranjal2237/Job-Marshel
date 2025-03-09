@@ -136,6 +136,7 @@ model JobPost {
   applications Int           @default(0)
 
   company   Company @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  
   companyId String
 
   createdAt    DateTime       @default(now())
